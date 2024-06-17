@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "proto.album_detail_service.v1";
 
-package proto.album_detail_service.v1;
+package album_detail_service.v1;
 
 service AlbumDetailService {
   rpc GetAlbumDetail (GetAlbumDetailRequest) returns (GetAlbumDetailResponse) {}
