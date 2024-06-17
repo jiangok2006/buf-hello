@@ -4,8 +4,14 @@ option go_package = "proto.album_list_service.v1";
 
 package album_list_service.v1;
 
+import "google/api/annotations.proto";
+
 service AlbumListService {
-  rpc GetAlbumList (GetAlbumListRequest) returns (GetAlbumListResponse) {}
+  rpc GetAlbumList (GetAlbumListRequest) returns (GetAlbumListResponse) {
+    option (google.api.http) = {
+      get: "/v1/album_list_service"
+    };
+  }
 }
 
 message GetAlbumListRequest {
