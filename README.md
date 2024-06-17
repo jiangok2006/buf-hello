@@ -1,3 +1,1 @@
 # buf-hello
-
-Hello!
