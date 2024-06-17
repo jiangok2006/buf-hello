@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "proto.album_list_service.v1";
+
+package proto.album_list_service.v1;
+
+service AlbumListService {
+  rpc GetAlbumList (GetAlbumListRequest) returns (GetAlbumListResponse) {}
+}
+
+message GetAlbumListRequest {
+}
+
+message GetAlbumListResponse {
+  string id = 1;
+  string title = 2;
+  double price = 3;
+}
