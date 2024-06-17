@@ -1,8 +1,13 @@
 name: buf-pull-request
-on: pull_request
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   build:
-    name: check and push to buf
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
